@@ -1,0 +1,92 @@
+RUNNING `PHRAPL`
+=======
+
+
+## Load `migrationArray` object (set of models) and subsampled input files
+
+```r
+
+# Set working Directory
+setwd("/your_working_directory/")
+
+# Load phrapl
+library(phrapl)
+
+# Load  `migrationArray` (set of models) file
+load('/path_to_input/phraplInput.rda')
+
+# Load phrapl input (subsampled dataset)
+load('/path_to_migrationArray/MigrationArray_3Pop_4K.rda')
+```
+
+## Define arguments
+
+```r
+#############################
+#####   Define arguments  ###
+
+## What models do you want to explore?
+modelRange<-1:10       # In this example only the first ten models in the migrationArray object will be explored
+
+# Number of populations that were subsampled per populations
+popAssignments<-list(c(2, 2, 2)),
+
+# Total number of individuals per populations (listed in your assignement file)
+totalPopVector=list(c(102, 60, 36))
+
+# Number of trees that will be simulated
+nTrees<-10000               # For exploratory runs use a small value (e.g. 10)
+subsamplesPerGene<-200       # Same value used in subsampling
+```
+
+## Set initial grid values
+
+```r
+collapseStarts=c(0.3, 0.58, 1.11, 2.12, 4.07, 7.81, 15),
+migrationStarts=c(0.1, 0.22, 0.46, 1, 2.15, 4.64),
+```
+
+## Run `PHRAPL` and keep track of the time
+
+```r
+#Run GridSearch and keep track of the time
+startTime<-as.numeric(Sys.time())
+
+result<-GridSearch(modelRange=modelRange,
+migrationArray=migrationArray,
+migrationArrayMap=migrationArrayMap,
+popAssignments=popAssignments,
+nTrees=nTrees,
+observedTree=observedTrees,
+subsampleWeights.df=subsampleWeights.df,
+print.ms.string=TRUE,
+print.results=TRUE,
+debug=TRUE,
+return.all=TRUE,
+collapseStarts=collapseStarts,
+migrationStarts=migrationStarts,
+subsamplesPerGene=subsamplesPerGene,
+totalPopVector=totalPopVector,
+print.matches=TRUE)
+
+#Print summary results
+print(result[[1]])
+
+#Make dedicated grid list
+gridList<-result[[1]]
+
+#Get elapsed time
+stopTime<-as.numeric(Sys.time()) #stop system timer
+elapsedSecs<-stopTime - startTime #elapsed time in hours
+elapsedHrs<-(elapsedSecs / 60) / 60 #convert to hours
+elapsedDays<-elapsedHrs / 24 #convert to days
+
+#Save the workspace from first grid analysis
+save(list=ls(), file=phrapl_output_model1_10.rda)
+
+```
+
+
+**WARNING**
+Need to add notes on `msPath` and `comparePath`
+
