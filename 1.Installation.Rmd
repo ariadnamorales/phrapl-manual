@@ -2,7 +2,7 @@ INSTALLATION
 =======
 
 # Installing `PHRAPL`
-If you have R, ms and, perl installed in your computer, go ahead and install `PHRAPL`!. Launch R and type:
+If you have R, ms and perl installed in your computer, go ahead and install `PHRAPL`!. Launch R and type:
 
 ```r
 install.packages("devtools")
