@@ -1,0 +1,39 @@
+INSTALLATION
+=======
+
+# Installing `PHRAPL`
+If you have R, ms and, perl installed in your computer, go ahead and install `PHRAPL`!. Launch R and type:
+
+```r
+install.packages("devtools")
+devtools::install_github("bomeara/phrapl")
+```
+
+## Installing `PHRAPL` dependencies
+
+```r
+## Install phrapl dependencies
+install.packages(c("phrapl", "ape", "partitions", "rgenoud", "optimx", "parallel", "nloptr", "Matrix", "rgl", "RColorBrewer", "gmp", "polynom"))
+```
+
+## Installing R
+Go to the following web page (http://www.r-project.org) and download the suitable version for your platform.
+
+## Installing ms
+
+Go to the web page (http://home.uchicago.edu/~rhudson1/source/mksamples.html) and download ms.tar.gz.
+Or in your terminal window type: 
+
+```
+wget https://webshare.uchicago.edu/users/rhudson1/Public/ms.folder/ms.tar.gz
+```
+
+The following commands will extract and compile the program:
+```
+tar -xvf ms.tar
+cd msdir
+gcc -o ms ms.c streec.c rand1.c -lm
+```
+
+## Installing perl
+If you are working under a Linux or Mac OS X platform, PERL will already be installed. If you are using Windows go to this page (http://learn.perl.org/installing/windows.html) and download the suitable version for your platform.

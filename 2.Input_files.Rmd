@@ -1,0 +1,74 @@
+INPUT FILES
+=======
+
+`PHRAPL` requires two types of input files: one assignment file (cladeAssignments.txt) and one file with all phylogenetic trees in newik format (trees.tre). The trees file must have one tree per gene or independent marker. __All files (assignment and trees file) must have the same taxon names (labels) for individuals across all loci.__
+
+
+# Assignment file
+The assignment file (cladeAssignments.txt) specifies which individuals belong to which populations/species/groups. 
+
+```
+## Example of an input assignment file. 
+# The first column lists individuals 
+# The second column lists populations.
+# This example does not include an outgroup.
+Indv  PopLabel
+ind1	A
+ind2	A
+ind3	A
+ind4	B
+ind5	B
+ind6	B
+ind7	C
+ind8	C
+ind9	C
+ind10	D
+ind11	D
+ind12	D
+```
+
+If an outgroup is included in the analysis, it must be listed at the end.
+```
+## Example of input assignment file with an outgroup. 
+# The first column lists individuals 
+# The second column lists populations.
+Indv	PopLabel
+ind1	A
+ind2	A
+ind3	A
+ind4	B
+ind5	B
+ind6	B
+ind7	C
+ind8	C
+ind9	C
+ind10	D
+ind11	D
+ind12	D
+ind13	outgroup
+```
+
+
+# Gene trees
+`PHRAPL` will use one file for all loci (locus1_tree; locus2_tree; locus3_tree; ??? locusn_tree;) in **newick** format
+
+```
+## Example of a file for all phylogenetic trees for all loci  
+((ind6,(ind4,ind5),ind11),(ind3,ind9),(((ind12,(ind10,ind7)),ind8),(ind1,ind2)));
+(((((ind10,ind7,ind1),ind12),ind6),((ind11,ind2,ind9),ind8)),(ind3,(ind4,ind5)));
+(((ind10,ind11),(((ind1,ind12,ind3),(ind2,ind4,ind8,(ind5,ind6))),ind9)),ind7);
+```
+
+
+## Merge all trees into one file
+If the trees files are separated, there are two options to merge all the tree files in one:
+*	In the shell (in your working directory): 
+```
+cat *.tre >>trees.tre
+```
+
+*	In phrapl use the function MergeTrees:  
+```r
+library(phrapl)
+MergeTrees(treePath="/path_to_tree_files/")
+```
