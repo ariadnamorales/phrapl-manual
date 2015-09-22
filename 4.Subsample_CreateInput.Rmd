@@ -1,0 +1,69 @@
+SUBSAMPLING AND CREATING AN INPUT FOR `PHRAPL`
+=======
+
+Multiple samples improve the accuracy of the results. However, the computational time required may be large. It has been shown that the same models are obtained using a subsampling strategy or a full data set strategy. `PHRAPL` implements a subsampling startegy (Fig. Subsampling).
+
+
+Fig. Subsampling. Rough representation of subsampling when there are two loci and four populations, A= 16, B=13, C=8 and D=3 individuals. In this example 3 individual per population were sampled, no replicates are shown.
+
+__Follow the next steps to subsample your data and create an input file for `PHRAPL`__
+
+## Load input files
+
+```r
+setwd("/your_working_directory/")
+library(phrapl)
+
+#############################
+#####   Load input files  ###
+
+# Assignement file
+currentAssign<-read.table(your_working_directory/CladeAssignments.txt)
+
+# Trees file
+currentTrees<-read.tree(your_working_directory/trees.tre)
+```
+
+## Define arguments
+
+```r
+#############################
+#####   Define arguments  ###
+
+# Number of population and individulas per population that will be subsampled
+### Simulations showed that 2 or 3 indivudlas per population is enough.
+popAssignments<-list(c(2,2,2))    # 3 populations and 2 indviduals per population
+
+subsamplesPerGene<-200       #100 might be enough.
+```
+ 
+## Do subsampling
+ 
+```r
+#############################
+####  Do subsampling  #######
+
+observedTrees<-PrepSubsampling(
+assignmentsGlobal=currentAssign,
+observedTrees=currentTrees,
+popAssignments=popAssignments,
+subsamplesPerGene=subsamplesPerGene,
+outgroup=FALSE,
+outgroupPrune=FALSE)      # TRUE if your input files include and outgroup
+```
+
+## Get subsample weights
+
+```r
+#############################
+### Get subsample weights ###
+subsampleWeights.df<-GetPermutationWeightsAcrossSubsamples(popAssignments=popAssignments,
+observedTrees=observedTrees)
+```
+
+## Save `PHRAPL` input
+
+You only need to subsample and calculate subsample weights __one time__, even if you are running different sets of models (`migrationArray`)
+```r
+save(list=c("observedTrees","subsampleWeights.df"),file=phraplInput.rda)
+```
