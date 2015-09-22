@@ -1,7 +1,7 @@
 INPUT FILES
 =======
 
-`PHRAPL` requires two types of input files: one assignment file (cladeAssignments.txt) and one file with all phylogenetic trees in newik format (trees.tre). The trees file must have one tree per gene or independent marker. __All files (assignment and trees file) must have the same taxon names (labels) for individuals across all loci.__
+`PHRAPL` requires two types of input files: an assignment file (e.g. cladeAssignments.txt) and a file with all phylogenetic trees in **newik** format (e.g. trees.tre). The file of trees must include one tree per gene or independent marker. __All files must have the same taxon names (labels) for individuals across all loci.__
 
 
 # Assignment file
