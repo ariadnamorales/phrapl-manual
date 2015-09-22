@@ -1,0 +1,26 @@
+PLOTING MODELS IN `PHRAPL`?
+=======
+
+You can build beautiful plots in `PHRAPL`, please read the HOW MODELS ARE BUILT IN `PHRAPL`? section.
+
+# 3D plots
+
+```r
+setwd("/your_working_directory/")
+library(phrapl)
+###
+
+#First load a migrationArray object
+load("MigrationArray_3Pop_4K.rda")
+
+# See parameters assigned to a given model (e.g. model 22)
+migrationArray[[22]]
+
+# Make an awsome 3D plot (e.g. model 22)
+PlotModel(migrationArray[[22]], taxonNames=c("pop1", "pop2", "pop3")
+
+```
+
+
+# 2D plots
+Example to be added.
