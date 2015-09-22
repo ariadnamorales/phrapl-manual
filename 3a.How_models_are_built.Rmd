@@ -1,0 +1,128 @@
+HOW MODELS ARE BUILT IN `PHRAPL`?
+=======
+
+__As you will notice, the models can be as complicated as you want. But adding parameters to the models will significantly increase computational time.__
+
+First, you need to undestand how the models are built in `PHRAPL`. Load a migrationArray object and pick a model
+
+```r
+
+setwd("/your_working_directory/")
+library(phrapl)
+###
+
+#load a migrationArray object
+load("MigrationArray_3Pop_3K.rda")
+
+# Here we are interested in model 22
+migrationArray[[22]]
+```
+
+You will see something like this
+```r
+> migrationArray[[22]]
+$collapseMatrix
+     [,1]
+[1,]    1
+[2,]    1
+[3,]    1
+
+$complete
+[1] TRUE
+
+$n0multiplierMap
+     [,1]
+[1,]    1
+[2,]    1
+[3,]    1
+
+$migrationArray
+, , 1
+
+     [,1] [,2] [,3]
+[1,]   NA    1    1
+[2,]    1   NA    1
+[3,]    1    1   NA
+
+```
+
+
+# `$collapseMatrix`
+`$collapseMatrix` represents coalescent (or collapse) events between populations. In the previous example (for model 22), all three populations collapse at time one [,1]. 
+
+In an example for 3 populations where pop2 and pop3 collapse at time 1, but pop1 does not collapse with the ancestral population of pop2 and pop3, you would see something like this:
+
+```r
+$collapseMatrix
+     [,1] [,2]
+[1,]    0    0
+[2,]    1    0
+[3,]    1   NA
+```
+
+
+In an example for 3 populations where pop2 and pop3 collapse at time 1, and pop1 collapse with the ancestral population of pop2 and pop3 at time 2, you would see something like this:
+
+```r
+$collapseMatrix
+     [,1] [,2]
+[1,]    0    1
+[2,]    1    1
+[3,]    1   NA
+```
+
+
+# `$n0multiplierMap`
+`$n0multiplierMap` represents population sizes. In the previous example (for model 22), all three populations have the same population size. 
+
+In an example for 3 populations whiout collapse events where pop2 and pop3 have the same population size, and pop1 has a different populatizon size at time 1, you would see something like this:
+
+```r
+$n0multiplierMap
+     [,1]
+[1,]    1
+[2,]    2
+[3,]    2
+```
+__These values do not indicate that one population is smaller or bigger than other(s), just that they are different.__
+
+In an example for 3 populations where pop2 and pop3 collapse at time 1 and pop1 collaspses at time 2, and pop2 and pop3 have the same population size, but pop1 has a different population size at time 1, and their ancestral populations have the same population size at time 2, you would see something like this:
+
+```r
+$`n0multiplierMap`
+     [,1] [,2]
+[1,]    1    3
+[2,]    2    3
+[3,]    2   NA
+```
+
+
+# `$migrationArray`
+`$migrationArray` represent migration events between populations. In the previous example (for model 22), symmetric migration ocurrs among all populations at time one (,,,1).
+
+In an example for 3 populations where there is symmetric migration between pop2 and pop3 at time 1, and there symmetric ancestral migration you would see something like this:
+
+```r
+$migrationArray
+, , 1
+
+     [,1] [,2] [,3]
+[1,]   NA    0    0
+[2,]    0   NA    1
+[3,]    0    1   NA
+
+, , 2
+
+     [,1] [,2] [,3]
+[1,]   NA    1   NA
+[2,]    1   NA   NA
+[3,]   NA   NA   NA
+```
+
+
+
+# Summary
+This figure summarizes what I have just described:
+
+
+Fig. model interpretations
