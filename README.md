@@ -34,7 +34,7 @@ Watch [these YouTube videos](https://www.youtube.com/watch?v=UC4Mj1K6c0k) to lea
 4. [Subsampling and creating an input for `PHRAPL`](https://github.com/ariadnamorales/phrapl-manual/blob/master/4.Subsample_CreateInput.Rmd)
 5. [Running `PHRAPL` (GridSearch option)](https://github.com/ariadnamorales/phrapl-manual/blob/master/5.Run_Phrapl.Rmd)
   - [5a. Running in parallel]()
-6. [Post-processing]()
+6. [Post-processing](https://github.com/ariadnamorales/phrapl-manual/blob/master/6.Post-processing.Rmd)
 7. [Output]()
   - [7a. Model selection]()
 8. Examples
