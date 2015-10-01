@@ -29,7 +29,7 @@ rgl.postscript("model22.pdf","pdf")
 ```
 And this awsome plot will be created. 
 
-<img src="https://github.com/ariadnamorales/phrapl-manual/blob/master/images/model22.pdf?raw=true" width="400" height="400" />
+<img src="https://github.com/ariadnamorales/phrapl-manual/blob/master/images/model22.png?raw=true" width="400" height="400" />
 
 Fig. 3D plot model 22.
 
@@ -38,7 +38,7 @@ Fig. 3D plot model 22.
 Phrapl can also create 2D plots. 
 
 ```r
-######################
+#######################
 ####  2D plotting   ###
 
 setwd("/your_working_directory/")
@@ -55,7 +55,7 @@ dev.off()
 ```
 And this awsome plot will be created. 
 
-<img src="https://github.com/ariadnamorales/phrapl-manual/blob/master/images/2dplot_model33.pdf?raw=true" width="400" height="400" />
+<img src="https://github.com/ariadnamorales/phrapl-manual/blob/master/images/2dplot_model33.png?raw=true" width="400" height="400" />
 
 Fig. 2D plot model 33.
 
