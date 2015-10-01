@@ -1,0 +1,63 @@
+PLOTTING MODELS IN `PHRAPL`?
+=======
+
+You can build beautiful plots in `PHRAPL`. The following example will guide you on how to create a 3D plot for model 22 from the 'migrationArray' object created on example 1 of [HOW MODELS ARE BUILT IN `PHRAPL`?](https://github.com/ariadnamorales/phrapl-manual/blob/master/3a.How_models_are_built.Rmd) section
+
+# 3D plots
+
+```r
+######################
+####  3D plotting   ###
+
+setwd("/your_working_directory/")
+library(phrapl)
+require(rgl)
+###
+
+#First load a migrationArray object
+load("MigrationArray_3Pop_4K.rda")
+
+# See parameters assigned to a given model (e.g. model 22)
+migrationArray[[22]]
+
+# Make an awsome 3D plot (e.g. model 22)
+PlotModel(migrationArray[[22]], taxonNames=c("pop1", "pop2", "pop3")
+
+#Save pdf
+rgl.postscript("model22.pdf","pdf")
+
+```
+And this awsome plot will be created. 
+
+<img src="https://github.com/ariadnamorales/phrapl-manual/blob/master/images/model22.png?raw=true" width="400" height="400" />
+
+Fig. 3D plot model 22.
+
+# 2D plots
+
+Phrapl can also create 2D plots. 
+
+```r
+#######################
+####  2D plotting   ###
+
+setwd("/your_working_directory/")
+library(phrapl)
+
+#First load a migrationArray object
+load("MigrationArray_3Pop_4K.rda")
+
+# Make a publication-quality 2D plot (e.g. model 33)
+pdf("2dplot_model33.pdf", width=4, height=4)      # use this function to save a pdf directly
+PlotModel2D(migrationArray[[33]], taxonNames=c("pop1", "pop2", "pop3"))
+dev.off()
+
+```
+And this awsome plot will be created. 
+
+<img src="https://github.com/ariadnamorales/phrapl-manual/blob/master/images/2dplot_model33.png?raw=true" width="400" height="400" />
+
+Fig. 2D plot model 33.
+
+
+
