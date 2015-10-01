@@ -13,7 +13,7 @@ ________
 O'Meara BC, Jackson ND, Morales A, & Carstens BC [(in review)](http://biorxiv.org/content/early/2015/08/24/025353) Phylogeographic Inference using Approximate likelihoods. Evolution.
 
 ### CODE
-`PHRAPL` is writen in `R`, but it uses `perl` and `ms` to perform simulations. The pre-CRAN (code under development) can be found in [github.](https://github.com/bomeara/phrapl)
+`PHRAPL` is written in `R`, but it uses `perl` and `ms` to perform simulations. The pre-CRAN (code under development) can be found in [github.](https://github.com/bomeara/phrapl)
 
 ## Why to use `PHRAPL`?
 Phylogeographic research aims to understand the recent history of species. Over the last decades, researchers have increasingly incorporated demographic models in order to estimate parameters (i.e., divergence times, population sizes, and rates of migration and expansion) that can contribute phylogeographic inference. 
@@ -30,7 +30,7 @@ Watch [these YouTube videos](https://www.youtube.com/watch?v=UC4Mj1K6c0k) to lea
 2. [Input files](https://github.com/ariadnamorales/phrapl-manual/blob/master/2.Input_files.Rmd)
 3. [Generate a set of models (migrationArray object)](https://github.com/ariadnamorales/phrapl-manual/blob/master/3.Generate_set_of_models.Rmd)
   - [3a. How models are built?](https://github.com/ariadnamorales/phrapl-manual/blob/master/3a.How_models_are_built.Rmd)
-  - [3b. Ploting models](https://github.com/ariadnamorales/phrapl-manual/blob/master/3b.Ploting_models.Rmd)
+  - [3b. Plotting models](https://github.com/ariadnamorales/phrapl-manual/blob/master/3b.Plotting_models.Rmd)
 4. [Subsampling and creating an input for `PHRAPL`](https://github.com/ariadnamorales/phrapl-manual/blob/master/4.Subsample_CreateInput.Rmd)
 5. [Running `PHRAPL` (GridSearch option)](https://github.com/ariadnamorales/phrapl-manual/blob/master/5.Run_Phrapl.Rmd)
   - [5a. Running in parallel]()
