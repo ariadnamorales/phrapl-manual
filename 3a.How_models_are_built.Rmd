@@ -123,6 +123,7 @@ $migrationArray
 
 # Summary
 This figure summarizes what I have just described:
-<img src="https://github.com/ariadnamorales/phrapl-manual/tree/master/images/model.interpretation2.png?raw=true" width="660" height="636" />
+
+<img src="https://github.com/ariadnamorales/phrapl-manual/blob/master/images/model.interpretation2.png?raw=true" width="660" height="636" />
 
 Fig. model interpretations
