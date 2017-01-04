@@ -1,7 +1,7 @@
 GENERATING A SET OF MODELS
 =======
 
-The first thing you will need is a set of models. `PHRAPL` can generate and explore all possible demographiic scenarios, but you need to be sure you know what models will be explored. __Please take some time to read and understand the free parameters section.__
+The first thing you will need is a set of models. `PHRAPL` can generate and explore all possible demographic scenarios, but you need to be sure you know what models will be explored. __Please take some time to read and understand the free parameters section.__
 
 ## Free parameters
 
@@ -13,26 +13,26 @@ Fig. Number of free parameters and the number of possible models.
 
 
 ### Population sizes
-__For the moment__, the free parameters will only be assigned to migration rates and coalescent events. `PHRAPL` will always assign one parameter to population size, otherwise the populations do not exist. This parameters for the moment is not "free", and should not be counted to generate a 'migrationArray' object.
+__For the moment__, the free parameters will only be assigned to migration rates and coalescent events. `PHRAPL` will always assign one parameter to population size, otherwise the populations do not exist. This parameter for the moment is not "free", and should not be counted to generate a 'migrationArray' object.
 
 
 ### Collapse (or coalescent) event 
 There are $[(2n)-1]$ possible events of populations merging (coalescent events). Each coalescent event will require one parameter. If this value is 0, your system represents an island population model.
 
 
-Fig. Example of free parameter assignments to coalescent events when K=1, K=2 and K=3. There are not migration events.
+Fig. An example of free parameter assignments to coalescent events when K=1, K=2, and K=3. There are not migration events.
 
 ### Migration
 There are $(N^2 - N)$ possible migration rates between populations.
 
 
-Fig. Example of free parameter assignment to migration rates when K=1, K=2 and K=3. There are not coalescent events. Only one scenario for k=3 is shown.
+Fig. An example of free parameter assignment to migration rates when K=1, K=2, and K=3. There are not coalescent events. Only one scenario for k=3 is shown.
 
 ## What is a `migrationArray` object?
 
-A `migrationArray` object will list the models that will be explored by `PHRAPL`. Depending on your question, you only need to generate a `migrationArray` object once for a specific number of poulations, migration rates, collapse events, and/or population sizes.
+A `migrationArray` object will list the models that will be explored by `PHRAPL`. Depending on your question, you only need to generate a `migrationArray` object once for a specific number of populations, migration rates, collapse events, and/or population sizes.
 
-We recommend to generate a `migrationArray` object with a full set of models (i.e. isolation-only, migration-only and, isolation-with-migration) forcing symmetric migration. Then fix one or a few topologies and allow assymetric migration.
+We recommend generating a `migrationArray` object with a full set of models (i.e. isolation-only, migration-only and, isolation-with-migration) forcing symmetric migration. Then fix one or a few topologies and allow asymmetric migration.
 
 ## Generating a `migrationArray` object
 This example generates a set of models for 3 population, where symmetric migration is forced and all possible topologies will be included.
@@ -45,11 +45,11 @@ library(phrapl)
 ###
 
 migrationArray<-GenerateMigrationIndividuals(
-popVector=c(2,2,2),               # how many population/species/groups do you have? If you have 2, then type c(2,2) or c(3,3) [the number of individuals doesn't matter here]. In this example there are 3 populations.
+popVector=c(2,2,2),               # how many population/species/groups do you have? If you have 2, then type c(2,2) or c(3,3) [the number of individuals doesn't matter here]. In this example, there are 3 populations.
 maxK=3,                           # maximum number of parameters in total (considering migration rates and coalescent events)
 maxMigrationK=1,                  # maximum number of parameters that will be assigned to migration rates
 maxN0K=1,                         # maximum number of parameters that will be assigned to population sizes
-forceSymmetricalMigration=TRUE,   # Do you want to generate a set of model with symmetric migration among all populations? (TRUE/FALSE)
+forceSymmetricalMigration=TRUE,   # Do you want to generate a set of models with symmetric migration among all populations? (TRUE/FALSE)
 forceTree=FALSE)                  # Do you want to force all population to collapse? (if TRUE only fully-resolved trees will be included in the set of models)
  
 migrationArrayMap<-GenerateMigrationArrayMap(migrationArray) 
@@ -67,13 +67,13 @@ library(phrapl)
 ###
 
 migrationArray<-GenerateMigrationIndividuals(
-popVector=c(2,2,2),               # how many population/species/groups do you have? If you have 2, then type c(2,2) or c(3,3) [the number of individuals doesn't matter here]. In this example there are 3 populations.
+popVector=c(2,2,2),               # how many population/species/groups do you have? If you have 2, then type c(2,2) or c(3,3) [the number of individuals doesn't matter here]. In this example, there are 3 populations.
 maxK=3,                           # maximum number of parameters in total (considering migration rates and coalescence events)
 maxMigrationK=1,                  # maximum number of parameters that will be assigned to migration rates
 maxN0K=1,                         # maximum number of parameters that will be assigned to population sizes
 forceSymmetricalMigration=FALSE,  # Do you want to generate a set of model with symmetric migration among all populations? (TRUE/FALSE)
 forceTree=FALSE,                  # Do you want to force all population to collapse? (if TRUE only fully-resolved trees will be included in the set of models)
-parallelRep=c(2,4))               # You can choose what topologies are included in the set of models. For example, for tree populations there are 8 possible topologies. In this example we are only interested in topologies 2 and 4. 
+parallelRep=c(2,4))               # You can choose what topologies are included in the set of models. For example, for tree populations, there are 8 possible topologies. In this example we are only interested in topologies 2 and 4. 
 
 migrationArrayMap<-GenerateMigrationArrayMap(migrationArray) 
 save(migrationArray,migrationArrayMap, file="MigrationArray_3Pop_4K_AssymMig_forcedTree_2and4.rda")
@@ -97,5 +97,3 @@ length(migrationArray)
 migrationArray[[1]]
 
 ```
-
-
