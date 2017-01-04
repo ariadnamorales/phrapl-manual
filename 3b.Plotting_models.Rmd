@@ -1,7 +1,7 @@
 PLOTTING MODELS IN `PHRAPL`?
 =======
 
-You can build beautiful plots in `PHRAPL`. The following example will guide you on how to create a 3D plot for model 22 from the 'migrationArray' object created on example 1 of [HOW MODELS ARE BUILT IN `PHRAPL`?](https://github.com/ariadnamorales/phrapl-manual/blob/master/3a.How_models_are_built.Rmd) section
+You can build beautiful plots in `PHRAPL`. The following example will guide you on how to create a 3D plot for model 22 from the 'migrationArray' object created in example 1 of [HOW MODELS ARE BUILT IN `PHRAPL`?](https://github.com/ariadnamorales/phrapl-manual/blob/master/3a.How_models_are_built.Rmd) section
 
 # 3D plots
 
@@ -27,7 +27,7 @@ PlotModel(migrationArray[[22]], taxonNames=c("pop1", "pop2", "pop3")
 rgl.postscript("model22.pdf","pdf")
 
 ```
-And this awsome plot will be created. 
+And this awesome plot will be created. 
 
 <img src="https://github.com/ariadnamorales/phrapl-manual/blob/master/images/model22.png?raw=true" width="400" height="400" />
 
@@ -53,11 +53,8 @@ PlotModel2D(migrationArray[[33]], taxonNames=c("pop1", "pop2", "pop3"))
 dev.off()
 
 ```
-And this awsome plot will be created. 
+And this awesome plot will be created. 
 
 <img src="https://github.com/ariadnamorales/phrapl-manual/blob/master/images/2dplot_model33.png?raw=true" width="400" height="400" />
 
 Fig. 2D plot model 33.
-
-
-
