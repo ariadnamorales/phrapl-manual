@@ -58,3 +58,10 @@ And this awesome plot will be created.
 <img src="https://github.com/ariadnamorales/phrapl-manual/blob/master/images/2dplot_model33.png?raw=true" width="400" height="400" />
 
 Fig. 2D plot model 33.
+
+A statuette of your prefered model can then be printed using 14 carat gold, which could be useful as a project souvenir/retirement nest egg, etc. Just follow [this link.](http://www.shapeways.com/product/BHPZB3WUC/phrapl-four-populations?optionId=40165805)
+
+<img src="https://github.com/ariadnamorales/phrapl-manual/blob/master/images/goldModel.jpg?raw=true" width="625" height="465" />
+
+Fig. 3D statuette in 14 carat gold.
+
