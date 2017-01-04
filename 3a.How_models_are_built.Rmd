@@ -92,16 +92,6 @@ $n0multiplierMap
 ```
 __These values do not indicate that one population is smaller or bigger than other(s), just that they are different.__
 
-# `$growthMap`
-`$growthMap` represents whether population sizes have changed (1=yes, 0=no). In the previous example (for model 22), the population size of the three populations remained constant. 
-```r
-$growthMap
-     [,1]
-[1,]    0
-[2,]    0
-[3,]    0
-```
-
 In an example for 3 populations where pop2 and pop3 collapse at time 1 and pop1 collapses at time 2, and pop2 and pop3 have the same population size, but pop1 has a different population size at time 1, and their ancestral populations have the same population size at time 2, you would see something like this:
 
 ```r
@@ -110,6 +100,20 @@ $`n0multiplierMap`
 [1,]    1    3
 [2,]    2    3
 [3,]    2   NA
+```
+
+
+# `$growthMap`
+`$growthMap` represents whether population sizes have changed (1=yes, 0=no). In the previous example (for model 22), the population size of the three populations remained constant. 
+
+In an example for 3 populations where pop2 and pop3 collapse at time 1 and pop1 collapses at time 2. Pop2 and pop3 did not grow, but pop1 grew at time 1. Ancestral populations have the same population size at time 2, you would see something like this:
+
+```r
+$growthMap
+     [,1] [,2]
+[1,]    1    0
+[2,]    0   NA
+[3,]    0    0
 ```
 
 
