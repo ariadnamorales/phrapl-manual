@@ -1,10 +1,11 @@
 SUBSAMPLING AND CREATING AN INPUT FOR `PHRAPL`
 =======
 
-Multiple samples improve the accuracy of the results. However, the computational time required may be large. It has been shown that the same models are obtained using a subsampling strategy or a full data set strategy. `PHRAPL` implements a subsampling startegy (Fig. Subsampling).
+Multiple samples improve the accuracy of the results. However, the computational time required may be large. It has been shown that the same models are obtained using a subsampling strategy or a full data set strategy. `PHRAPL` implements a subsampling strategy.
 
+<img src="https://github.com/ariadnamorales/phrapl-manual/blob/master/images/subsampling.png?raw=true" width="811.5" height="592" />
 
-Fig. Subsampling. Rough representation of subsampling when there are two loci and four populations, A= 16, B=13, C=8 and D=3 individuals. In this example 3 individual per population were sampled, no replicates are shown.
+Fig. Subsampling. A representation of subsampling when there are two loci and four populations with different sample sizes: A= 16, B=13, C=8 and D=3. In this example 3 individuals per population were sampled, no replicates are shown.
 
 __Follow the next steps to subsample your data and create an input file for `PHRAPL`__
 
@@ -30,29 +31,31 @@ currentTrees<-read.tree(your_working_directory/trees.tre)
 #############################
 #####   Define arguments  ###
 
-# Number of population and individulas per population that will be subsampled
-### Simulations showed that 2 or 3 indivudlas per population is enough.
-popAssignments<-list(c(2,2,2))    # 3 populations and 2 indviduals per population
+# Number of population and individuals per population that will be subsampled
+### Simulations showed that 2 or 3 individuals per population are enough.
+popAssignments<-list(c(2,2,2))    # 3 populations and 2 individuals per population
 
 subsamplesPerGene<-200       #100 might be enough.
 ```
  
 ## Do subsampling
- 
+Read more about how to subsample trees in the [`PHRAPL` vignette](https://github.com/bomeara/phrapl/blob/master/doc/phrapl_vignette.Rmd), section III.
+
 ```r
 #############################
 ####  Do subsampling  #######
 
 observedTrees<-PrepSubsampling(
-assignmentsGlobal=currentAssign,
-observedTrees=currentTrees,
-popAssignments=popAssignments,
-subsamplesPerGene=subsamplesPerGene,
-outgroup=FALSE,
-outgroupPrune=FALSE)      # TRUE if your input files include and outgroup
+assignmentsGlobal=currentAssign,      # the population assignments table
+observedTrees=currentTrees,           # the original trees
+popAssignments=popAssignments,        # the number of tips subsampled per population
+subsamplesPerGene=subsamplesPerGene,  # the number of replicate subsamples to take per locus
+outgroup=FALSE,                       # whether an outgroup is present in the dataset (TRUE or FALSE)
+outgroupPrune=FALSE)                  # whether an outgroup, if present, should be excluded from the subsampled trees
 ```
 
 ## Get subsample weights
+Read more about how to calcule degeneracy weights for subsampled trees in the [`PHRAPL` vignette](https://github.com/bomeara/phrapl/blob/master/doc/phrapl_vignette.Rmd), section IV.
 
 ```r
 #############################
