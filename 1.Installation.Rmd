@@ -13,7 +13,7 @@ devtools::install_github("bomeara/phrapl")
 
 ```r
 ## Install phrapl dependencies
-install.packages(c("phrapl", "ape", "partitions", "rgenoud", "optimx", "parallel", "nloptr", "Matrix", "rgl", "RColorBrewer", "gmp", "polynom"))
+install.packages(c("ape", "partitions", "lattice", "polynom", "gmp", "rgenoud","parallel", "optimx", "igraph", "numDeriv", "nloptr", "Matrix", "rgl", "RColorBrewer", "binom", "diagram", "P2C2M"))
 ```
 
 ## Installing R
@@ -28,12 +28,14 @@ Or in your terminal window type:
 wget https://webshare.uchicago.edu/users/rhudson1/Public/ms.folder/ms.tar.gz
 ```
 
-The following commands will extract and compile the program:
+The following commands will extract, compile the program and add it to your PATH:
 ```
 tar -xvf ms.tar
 cd msdir
 gcc -o ms ms.c streec.c rand1.c -lm
+sudo cp ms /usr/bin
+sudo cp ms /usr/lib
 ```
 
 ## Installing perl
-If you are working under a Linux or Mac OS X platform, PERL will already be installed. If you are using Windows go to this page (http://learn.perl.org/installing/windows.html) and download the suitable version for your platform.
+If you are working on a Linux or Mac OS X platform, PERL will already be installed. If you are using Windows go to this page (http://learn.perl.org/installing/windows.html) and download the suitable version for your platform.
