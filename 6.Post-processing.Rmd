@@ -1,7 +1,7 @@
 POST-PROCESSING
 =======
 
-In `phrapl` each model in a given set of models can be explored independently (by specifying the `modelRange` in `GridSearch). Then, the output files can be concatenated to calculate model averaged parameter values and positive Akaike weighs (wAIC). These weights are calculated to normalize the AIC values and can be interpreted as model probabilities, where the sum of all wAIC values in a given set of models is equal to 1. The following example will guide through this process.
+In `phrapl` each model in a given set of models can be explored independently (by specifying the `modelRange` in `GridSearch). Then, the output files can be concatenated to calculate model-averaged parameter values and positive Akaike weights (wAIC). These weights are calculated to normalize the AIC values and can be interpreted as model probabilities, where the sum of all wAIC values in a given set of models is equal to 1. The following example will guide through this process.
 
 
 ```r
