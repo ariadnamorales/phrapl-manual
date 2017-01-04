@@ -50,7 +50,7 @@ ind13	outgroup
 
 
 # Gene trees
-`PHRAPL` will use one file for all loci (locus1_tree; locus2_tree; locus3_tree; ??? locusn_tree;) in **newick** format
+`PHRAPL` will use one file for all loci (locus1_tree; locus2_tree; locus3_tree; locusn_tree;) in **newick** format
 
 ```
 ## Example of a file for all phylogenetic trees for all loci  
@@ -61,10 +61,10 @@ ind13	outgroup
 
 
 ## Merge all trees into one file
-If the trees files are separated, there are two options to merge all the tree files in one:
+If the tree files are separated, there are two options to merge all the tree files in one:
 *	In the shell (in your working directory): 
 ```
-cat *.tre >>trees.tre
+cat *.tre >> trees.tre
 ```
 
 *	In phrapl use the function MergeTrees:  
