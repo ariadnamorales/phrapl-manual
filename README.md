@@ -30,12 +30,9 @@ Typically, this is conducted via the use of software packages that contain speci
 
 Watch [these YouTube videos](https://www.youtube.com/watch?v=UC4Mj1K6c0k) to learn more about `PHRAPL`.
 
-Vignette
-
-
 ## Contents
 
-     [Vignette](https://github.com/bomeara/phrapl/blob/master/doc/phrapl_vignette.Rmd)
+-    [CRAN-version Vignette](https://github.com/bomeara/phrapl/blob/master/doc/phrapl_vignette.Rmd)
 1. [Installation](https://github.com/ariadnamorales/phrapl-manual/blob/master/1.Installation.Rmd)
 2. [Input files](https://github.com/ariadnamorales/phrapl-manual/blob/master/2.Input_files.Rmd)
 3. [Generate a set of models (migrationArray object)](https://github.com/ariadnamorales/phrapl-manual/blob/master/3.Generate_set_of_models.Rmd)
