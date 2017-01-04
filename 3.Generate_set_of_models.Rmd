@@ -49,6 +49,7 @@ popVector=c(2,2,2),               # how many population/species/groups do you ha
 maxK=3,                           # maximum number of parameters in total (considering migration rates and coalescent events)
 maxMigrationK=1,                  # maximum number of parameters that will be assigned to migration rates
 maxN0K=1,                         # maximum number of parameters that will be assigned to population sizes
+maxGrowthK=0,                     # maximum number of growth parameters that will be incorporated into the model set
 forceSymmetricalMigration=TRUE,   # Do you want to generate a set of models with symmetric migration among all populations? (TRUE/FALSE)
 forceTree=FALSE)                  # Do you want to force all population to collapse? (if TRUE only fully-resolved trees will be included in the set of models)
  
@@ -69,8 +70,9 @@ library(phrapl)
 migrationArray<-GenerateMigrationIndividuals(
 popVector=c(2,2,2),               # how many population/species/groups do you have? If you have 2, then type c(2,2) or c(3,3) [the number of individuals doesn't matter here]. In this example, there are 3 populations.
 maxK=3,                           # maximum number of parameters in total (considering migration rates and coalescence events)
-maxMigrationK=1,                  # maximum number of parameters that will be assigned to migration rates
 maxN0K=1,                         # maximum number of parameters that will be assigned to population sizes
+maxGrowthK=0,                     # maximum number of growth parameters that will be incorporated into the model set
+maxMigrationK=1,                  # maximum number of parameters that will be assigned to migration rates
 forceSymmetricalMigration=FALSE,  # Do you want to generate a set of model with symmetric migration among all populations? (TRUE/FALSE)
 forceTree=FALSE,                  # Do you want to force all population to collapse? (if TRUE only fully-resolved trees will be included in the set of models)
 parallelRep=c(2,4))               # You can choose what topologies are included in the set of models. For example, for tree populations, there are 8 possible topologies. In this example we are only interested in topologies 2 and 4. 
