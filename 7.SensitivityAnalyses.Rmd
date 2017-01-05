@@ -122,5 +122,5 @@ for(i in 1:101){					## ------> Be careful to specify the total number of subset
 
 The goal is to obtain one `totalData` file per subset that will contain AIC, wAIC and lnL values per set of loci. With a couple of loops, you can extract that information. This is how we summarize that information for *Myotis* bats:
 
-<img src="https://github.com/ariadnamorales/phrapl-manual/blob/master/images/subsets81models_MyotisData.pdf" width="893" height="281">
+<img src="https://github.com/ariadnamorales/phrapl-manual/blob/master/images/subsets81models_MyotisData.png?raw=true" width="893" height="281"  />
 [Fig. 2b](http://sysbio.oxfordjournals.org/content/early/2016/12/20/sysbio.syw100/F2.expansion.html) from Morales et al. (2016)
