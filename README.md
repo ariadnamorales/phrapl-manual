@@ -12,11 +12,11 @@ ________
 ### PHRAPL project [web site](http://www.phrapl.org/)
 
 ### CITATION
-- Jackson N, Morales AE, Carstens BC, O'Meara BC (2016) PHRAPL: Phylogeographic Inference using Approximate likelihoods. Systematic Biology. In press
+- Jackson ND, Morales AE, Carstens BC, O'Meara BC (2016) PHRAPL: Phylogeographic Inference using Approximate likelihoods. Systematic Biology. In press
 
-- Jackson N, Carstens BC, Morales AE, O’Meara BC (2016) Species delimitation with gene flow. Systematic Biology. [DOI: 10.1093/sysbio/syw117](http://sysbio.oxfordjournals.org/content/early/2016/12/05/sysbio.syw117.short?rss=1)
+- Jackson ND, Carstens BC, Morales AE, O'Meara BC (2016) Species delimitation with gene flow. Systematic Biology. [DOI: 10.1093/sysbio/syw117](http://sysbio.oxfordjournals.org/content/early/2016/12/05/sysbio.syw117.short?rss=1)
 
-- Morales AE, Jackson N, Dewey T, O’Meara BC, Carstens BC (2016) Speciation with gene flow in North American *Myotis* bats. Systematic Biology. [DOI: 10.1093/sysbio/syw100](http://sysbio.oxfordjournals.org/content/early/2016/12/20/sysbio.syw100.full?sid=4376fa06-5da3-4e21-9990-faf3c57b9298)
+- Morales AE, Jackson ND, Dewey T, O'Meara BC, Carstens BC (2016) Speciation with gene flow in North American *Myotis* bats. Systematic Biology. [DOI: 10.1093/sysbio/syw100](http://sysbio.oxfordjournals.org/content/early/2016/12/20/sysbio.syw100.full?sid=4376fa06-5da3-4e21-9990-faf3c57b9298)
 
 ### CODE
 `PHRAPL` is written in `R`, but it uses `perl` and `ms` to perform simulations. The pre-CRAN (code under development) can be found in [github.](https://github.com/bomeara/phrapl)
@@ -48,7 +48,7 @@ Watch [these YouTube videos](https://www.youtube.com/watch?v=UC4Mj1K6c0k) to lea
 #### Advanced topics:
 
 7. [Sensitivity Analyses](https://github.com/ariadnamorales/phrapl-manual/blob/master/7.SensitivityAnalyses.Rmd)
-8. [Species delimitation]()
+8. Species delimitation (in construction)
 
 
 ### Do you have a question about `PHRAPL` or want to report a bug?
