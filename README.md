@@ -30,11 +30,16 @@ Typically, this is conducted via the use of software packages that contain speci
 
 Watch [these YouTube videos](https://www.youtube.com/watch?v=UC4Mj1K6c0k) to learn more about `PHRAPL`.
 
+## Do you have a question about `PHRAPL` or want to report a bug?
+Post it in the [phrapl-users](https://groups.google.com/forum/#!forum/phrapl-users) google group.
+
+
 ## Contents
 
 -    [CRAN-version Vignette](https://github.com/bomeara/phrapl/blob/master/doc/phrapl_vignette.Rmd)
 
 1. [Installation](https://github.com/ariadnamorales/phrapl-manual/blob/master/1.Installation.Rmd)
+  - [Phydocker for windows users](http://www.phrapl.org/#distribution): It lets you use `PHRAPL` without having to install R, perl, ms, etc, just docker. Recommended only for testing.
 2. [Input files](https://github.com/ariadnamorales/phrapl-manual/blob/master/2.Input_files.Rmd)
 3. [Generate a set of models (migrationArray object)](https://github.com/ariadnamorales/phrapl-manual/blob/master/3.Generate_set_of_models.Rmd)
   - [3a. How models are built?](https://github.com/ariadnamorales/phrapl-manual/blob/master/3a.How_models_are_built.Rmd)
