@@ -28,7 +28,7 @@ load('/path_to_migrationArray/MigrationArray_3Pop_4K.rda')
 ## What models do you want to explore?
 modelRange=1:10       # In this example only the first ten models in the migrationArray object will be explored
 
-# Number of individuals that were subsampled per populations
+# Number of individuals that were subsampled per population
 popAssignments=list(c(2, 2, 2)),
 
 # Total number of individuals per population (listed in your assignment file)
