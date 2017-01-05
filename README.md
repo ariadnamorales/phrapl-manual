@@ -30,10 +30,6 @@ Typically, this is conducted via the use of software packages that contain speci
 
 Watch [these YouTube videos](https://www.youtube.com/watch?v=UC4Mj1K6c0k) to learn more about `PHRAPL`.
 
-## Do you have a question about `PHRAPL` or want to report a bug?
-Post it in the [phrapl-users](https://groups.google.com/forum/#!forum/phrapl-users) google group.
-
-
 ## Contents
 
 -    [CRAN-version Vignette](https://github.com/bomeara/phrapl/blob/master/doc/phrapl_vignette.Rmd)
@@ -50,3 +46,7 @@ Post it in the [phrapl-users](https://groups.google.com/forum/#!forum/phrapl-use
 7. [Output]()
   - [7a. Model selection]()
 8. [Sensitivity Analyses]()
+
+
+### Do you have a question about `PHRAPL` or want to report a bug?
+Post it in the [phrapl-users](https://groups.google.com/forum/#!forum/phrapl-users) google group.
