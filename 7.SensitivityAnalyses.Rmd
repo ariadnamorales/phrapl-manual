@@ -49,6 +49,8 @@ system("sh extractRout_matchesVector.sh")		# Run bash script
 
 Then, the function `GenerateSetLoci` will re-calculate AICs and parameter estimates for subsets of loci. This can either be done for independent subsets of loci (`cumulative=FALSE`) or for accumulating subsets of loci (`cumulative=TRUE`, in which the second subset is added to the first subset, and then the third subset is added to these, etc). `lociRange` gives the number of loci in the original analysis and `NintervalLoci` gives the desired number of loci in each subset, **which must be a multiple of the total number of loci**. If the models in the original analysis are only a subset of models in the `migrationArray`, this `modelRange` must be specified as well. Output of this function is an **`rda`** file for each locus subset (numbered in order with a numerical suffix, i.e., _1, _2, _3, etc). Note that subsets are taken in order from the original output files.
 
+**Note:** `GenerateSetLoci` is still being modified to make it more amicable. [Here](https://github.com/ariadnamorales/phrapl-manual/blob/master/data/GenerateSetLoci.R) is one of the latest versions that you can download and load as a source file.
+
 ```r
 # Set working Directory
 setwd("/your_working_directory/subsets")      # Advice: create a folder "subsets" where the new RDA output files will be saved
@@ -62,7 +64,7 @@ load('/path_to_input/phraplInput.rda')
 # Load  `migrationArray` (set of models) file
 load('/path_to_migrationArray/MigrationArray_3Pop_3K.rda')
 
-#Load GenerateSetLoci function (if not available in the code)
+#Load GenerateSetLoci function (if not available)
 source('/path_to_function/GenerateSetLoci_cum8_v3.R')
 
 ###########################
