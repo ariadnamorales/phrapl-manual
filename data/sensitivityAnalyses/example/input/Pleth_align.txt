@@ -1,0 +1,1 @@
+Ind	PopPidN1	NorthPidN2	NorthPidN3	NorthPidN4	NorthPidS1	SouthPidS2	SouthPidS3	SouthPidS4	South
