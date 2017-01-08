@@ -37,6 +37,7 @@ Watch [these YouTube videos](https://www.youtube.com/watch?v=UC4Mj1K6c0k) to lea
 -    [PHRAPL tutorial SSB workshop 2017](https://github.com/bomeara/phrapl/blob/master/doc/phrapl_tutorial_2017Workshop.R)
 -    [PHRAPL example of Sensitivity Analyses SSB workshop 2017](https://github.com/ariadnamorales/phrapl-manual/tree/master/data/sensitivityAnalyses)
 -    [Virtual R-studio SSB workshop 2017](http://phrapl2.sloppy.zone/)
+-    [Example Data Set PHRAPL SSB workshop 2017](https://github.com/ariadnamorales/phrapl-manual/tree/master/data/exampleData)
 
 
 1. [Installation](https://github.com/ariadnamorales/phrapl-manual/blob/master/1.Installation.Rmd)
