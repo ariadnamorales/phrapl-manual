@@ -33,6 +33,8 @@ Watch [these YouTube videos](https://www.youtube.com/watch?v=UC4Mj1K6c0k) to lea
 ## Contents
 
 -    [CRAN-version Vignette](https://github.com/bomeara/phrapl/blob/master/doc/phrapl_vignette.Rmd)
+-    [PHRAPL tutorial SSB workshop 2017](https://github.com/bomeara/phrapl/blob/master/doc/phrapl_tutorial_2017Workshop.R)
+-    [PHRAPL dependencies SSB workshop 2017](https://github.com/bomeara/phrapl/blob/master/doc/dependencies_2017Workshop.R)
 
 1. [Installation](https://github.com/ariadnamorales/phrapl-manual/blob/master/1.Installation.Rmd)
   - [Phydocker for windows users](http://www.phrapl.org/#distribution): It lets you use `PHRAPL` without having to install R, perl, ms, etc, just docker. Recommended only for testing.
