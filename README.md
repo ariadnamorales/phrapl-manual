@@ -1,9 +1,7 @@
 PHRAPL --  user manual
 =======
 
-##**WARNING**
-This user manual is under development. Please send me an [email](ariadna.biologia@gmail.com) if you have comments.
-Figures and examples need to be added.
+Please send me an [email](ariadna.biologia@gmail.com) if you have comments.
 
 ________
 
@@ -12,11 +10,14 @@ ________
 ### PHRAPL project [web site](http://www.phrapl.org/)
 
 ### CITATION
-- Jackson ND, Morales AE, Carstens BC, O'Meara BC (2016) PHRAPL: Phylogeographic Inference using Approximate likelihoods. Systematic Biology. In press
 
-- Jackson ND, Carstens BC, Morales AE, O'Meara BC (2016) Species delimitation with gene flow. Systematic Biology. [DOI: 10.1093/sysbio/syw117](http://sysbio.oxfordjournals.org/content/early/2016/12/05/sysbio.syw117.short?rss=1)
+- Jackson N, Morales AE, Carstens BC, O'Meara BC (2017) [PHRAPL: Phylogeographic Inference using Approximate likelihoods](https://academic.oup.com/sysbio/article/66/6/1045/2999288). Systematic Biology. 66:1045-1053.
 
-- Morales AE, Jackson ND, Dewey T, O'Meara BC, Carstens BC (2016) Speciation with gene flow in North American *Myotis* bats. Systematic Biology. [DOI: 10.1093/sysbio/syw100](http://sysbio.oxfordjournals.org/content/early/2016/12/20/sysbio.syw100.full?sid=4376fa06-5da3-4e21-9990-faf3c57b9298)
+### OTHER REFERENCES
+- Jackson N, Carstens BC, Morales AE, O’Meara BC (2017) [Species delimitation with gene flow](https://academic.oup.com/sysbio/article/66/5/799/2726792?searchresult=1). Systematic Biology. 66:799-812.
+- Morales AE, Jackson N, Dewey T, O’Meara BC, Carstens BC (2017) [Speciation with gene flow in North American Myotis bats](https://academic.oup.com/sysbio/article/66/3/440/2682289). Systematic Biology. 66:440-452.
+- Carstens BC, Morales AE, Jackson N, O’Meara BC (2017) [Objective choice of Phylogeographic Models](https://www.sciencedirect.com/science/article/pii/S1055790317303160?via%3Dihub). Molecular Phylogenetics and Evolution. 116:136-140.
+
 
 ### CODE
 `PHRAPL` is written in `R`, but it uses `perl` and `ms` to perform simulations. The pre-CRAN (code under development) can be found in [github.](https://github.com/bomeara/phrapl)
