@@ -44,17 +44,17 @@ Watch [these YouTube videos](https://www.youtube.com/watch?v=UC4Mj1K6c0k) to lea
 1. [Installation](https://github.com/ariadnamorales/phrapl-manual/blob/master/1.Installation.Rmd)
   - [Phydocker for windows users](http://www.phrapl.org/#distribution): It lets you use `PHRAPL` without having to install R, perl, ms, etc, just docker. Recommended only for testing.
 2. [Input files](https://github.com/ariadnamorales/phrapl-manual/blob/master/2.Input_files.Rmd)
-3. [Generate a set of models (migrationArray object)](https://github.com/ariadnamorales/phrapl-manual/blob/master/3.Generate_set_of_models.Rmd)
-  - [3a. How models are built?](https://github.com/ariadnamorales/phrapl-manual/blob/master/3a.How_models_are_built.Rmd)
-  - [3b. Plotting models](https://github.com/ariadnamorales/phrapl-manual/blob/master/3b.Plotting_models.Rmd)
-4. [Subsampling and creating an input for `PHRAPL`](https://github.com/ariadnamorales/phrapl-manual/blob/master/4.Subsample_CreateInput.Rmd)
-5. [Running `PHRAPL` (GridSearch option)](https://github.com/ariadnamorales/phrapl-manual/blob/master/5.Run_Phrapl.Rmd)
-6. [Post-processing](https://github.com/ariadnamorales/phrapl-manual/blob/master/6.Post-processing.Rmd)
+3. [Generate a set of models (migrationArray object)](https://github.com/ariadnamorales/phrapl-manual/blob/master/3.Generate_set_of_models.md)
+  - [3a. How models are built?](https://github.com/ariadnamorales/phrapl-manual/blob/master/3a.How_models_are_built.md)
+  - [3b. Plotting models](https://github.com/ariadnamorales/phrapl-manual/blob/master/3b.Plotting_models.md)
+4. [Subsampling and creating an input for `PHRAPL`](https://github.com/ariadnamorales/phrapl-manual/blob/master/4.Subsample_CreateInput.md)
+5. [Running `PHRAPL` (GridSearch option)](https://github.com/ariadnamorales/phrapl-manual/blob/master/5.Run_Phrapl.md)
+6. [Post-processing](https://github.com/ariadnamorales/phrapl-manual/blob/master/6.Post-processing.md)
 
 
 #### Advanced topics:
 
-7. [Sensitivity Analyses](https://github.com/ariadnamorales/phrapl-manual/blob/master/7.SensitivityAnalyses.Rmd)
+7. [Sensitivity Analyses](https://github.com/ariadnamorales/phrapl-manual/blob/master/7.SensitivityAnalyses.md)
 8. Species delimitation (in construction)
 
 
