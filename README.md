@@ -41,9 +41,9 @@ Watch [these YouTube videos](https://www.youtube.com/watch?v=UC4Mj1K6c0k) to lea
 -    [Example Data Set PHRAPL SSB workshop 2017](https://github.com/ariadnamorales/phrapl-manual/tree/master/data/exampleData)
 
 
-1. [Installation](https://github.com/ariadnamorales/phrapl-manual/blob/master/1.Installation.Rmd)
+1. [Installation](https://github.com/ariadnamorales/phrapl-manual/blob/master/1.Installation.md)
   - [Phydocker for windows users](http://www.phrapl.org/#distribution): It lets you use `PHRAPL` without having to install R, perl, ms, etc, just docker. Recommended only for testing.
-2. [Input files](https://github.com/ariadnamorales/phrapl-manual/blob/master/2.Input_files.Rmd)
+2. [Input files](https://github.com/ariadnamorales/phrapl-manual/blob/master/2.Input_files.md)
 3. [Generate a set of models (migrationArray object)](https://github.com/ariadnamorales/phrapl-manual/blob/master/3.Generate_set_of_models.md)
   - [3a. How models are built?](https://github.com/ariadnamorales/phrapl-manual/blob/master/3a.How_models_are_built.md)
   - [3b. Plotting models](https://github.com/ariadnamorales/phrapl-manual/blob/master/3b.Plotting_models.md)
