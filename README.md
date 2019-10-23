@@ -6,8 +6,9 @@ ________
 
 <img src="https://github.com/ariadnamorales/phrapl-manual/blob/master/phrapl_logo.png?raw=true" width="200" height="200" />
 
-### PHRAPL project [web site](http://www.phrapl.org/)
+### PHRAPL project [web site](http://www.phrapl.org/) has not been updated for a long time. But the user documentation is in the process of being updated **(should be ready by Nov 2019).** In the meantime, be patient.
 
+---
 ### CITATION
 - Jackson N, Morales AE, Carstens BC, O'Meara BC (2017) [PHRAPL: Phylogeographic Inference using Approximate likelihoods](https://academic.oup.com/sysbio/article/66/6/1045/2999288). Systematic Biology. 66:1045-1053.
 
