@@ -1,5 +1,7 @@
-# run this script typing in your terinal:
-#R CMD BATCH 2.2.buildModels_loadData_Subsampling_GridSearch_Post.R > 2.2.buildModels_loadData_Subsampling_GridSearch_Post.R.out
+# download and run this script typing in your terinal:
+#
+# wget https://github.com/ariadnamorales/phrapl-manual/raw/master/data/tutorial2.2/scripts/2.2.buildModels_loadData_Subsampling_GridSearch_Post.R
+# R CMD BATCH 2.2.buildModels_loadData_Subsampling_GridSearch_Post.R > 2.2.buildModels_loadData_Subsampling_GridSearch_Post.R.out
 
 
 ## R script with all steps required for Tutorial2-2
@@ -8,8 +10,8 @@
 ##
 ## 
 ##
-###############################
-######---> TUTORIAL STARTS HERE
+################################
+######---> R TUTORIAL STARTS HERE
 
 
 ## Create output dirs
@@ -236,3 +238,4 @@ write.table(totalData, file=paste0(getwd(),"/results/totalData.txt"), sep="\t", 
 ## Save relevant output objects in "rda" file
 save(list=ls(), file=paste0(getwd(),"/tutorial_2.2_outputSummary.rda"))
 
+######---> R TUTORIAL ENDS HERE
