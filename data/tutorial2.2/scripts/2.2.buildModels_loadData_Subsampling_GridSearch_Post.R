@@ -1,7 +1,7 @@
 # download and run this script typing in your terinal:
 #
 # wget https://github.com/ariadnamorales/phrapl-manual/raw/master/data/tutorial2.2/scripts/2.2.buildModels_loadData_Subsampling_GridSearch_Post.R
-# R CMD BATCH 2.2.buildModels_loadData_Subsampling_GridSearch_Post.R > 2.2.buildModels_loadData_Subsampling_GridSearch_Post.R.out
+# R CMD BATCH 2.2.buildModels_loadData_Subsampling_GridSearch_Post.R > 2.2.buildModels_loadData_Subsampling_GridSearch_Post.Rout
 
 
 ## R script with all steps required for Tutorial2-2
